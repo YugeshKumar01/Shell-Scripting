@@ -22,6 +22,19 @@ TLS_CA_File=/etc/ssl/certs/ca-certificates.crt
 root:yugeshkumar6202@gmail.com:smtp.gmail.com:587
 ---------------------------------------------------
 
+run below command to setup cronjob---
+
+crontab -e
+
+add below line in the file: this cronjob will run in every 5 mins
+*/5 * * * * /home/ubuntu/shell-Scripting/check_ec2_health.sh
+
+to check: crontab -l
+
+
+
+
+
 Setup_gmail
 
 
